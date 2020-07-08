@@ -3,14 +3,14 @@
 let input;
 let total = 0;
 
-while (true) {
+while (input !== null) {
   input = prompt('Введите число');
 
   if (input === null) {
     break;
   }
 
-  input = Number(input);
+  input = +input;
   const notNumber = Number.isNaN(input);
   if (notNumber) {
     console.log('Было введено не число');
