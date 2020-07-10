@@ -3,7 +3,7 @@
 let input;
 let total = 0;
 
-while (input !== null) {
+do {
   input = prompt('Введите число');
 
   if (input === null) {
@@ -18,5 +18,6 @@ while (input !== null) {
   }
   total += input;
 }
+while (input !== null);
 
 alert(`Общая сумма ${total}`);
